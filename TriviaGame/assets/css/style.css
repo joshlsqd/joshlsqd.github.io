@@ -1,0 +1,24 @@
+body {
+	background: lightblue;
+}
+
+.main {
+	border-radius: 10px;
+	margin: 20px 5%;
+	background: white;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.container {
+}
+
+.firstImage {
+	max-width: 700px;
+	width: 60%;
+	margin-top: 2%
+}
+.finished {
+	background-color: green;
+	color: white;
+}
