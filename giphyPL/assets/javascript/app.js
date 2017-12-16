@@ -26,7 +26,7 @@ $(document).on("click", ".topics", function() {
     $('.row').empty();
     searchTopic = $(this).attr('data');
     console.log(searchTopic);
-    url = "http://api.giphy.com/v1/gifs/search?q=" + searchTopic + "&api_key=" + apiKey + "&limit=10";
+    url = "https://api.giphy.com/v1/gifs/search?q=" + searchTopic + "&api_key=" + apiKey + "&limit=10";
     giphySearch();
 });
 
