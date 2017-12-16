@@ -1,7 +1,7 @@
 var searchTopics = ['Arsenal' , 'Bournemouth' , 'Brighton & Hove Albion' , 'Burnley' , 'Chelsea' , 'Crystal Palace' , 'Everton' , 'Huddersfield Town' , 'Leicester City' , 'Liverpool' , 'Manchester City' , 'Manchester United' , 'Newcastle United' , 'Southampton' , 'Stoke City' , 'Swansea City' , 'Tottenham Hotspur' , 'Watford' , 'West Bromwich Albion' , 'West Ham United'];
 var searchTopic = "Tottenham Hotspur";
 var apiKey = "FxJ5CJ4D8qcg50KUxT0O8ZCZadmWEWX6";
-var url = "http://api.giphy.com/v1/gifs/search?q=" + searchTopic + "&api_key=" + apiKey + "&limit=10";
+var url = "https://api.giphy.com/v1/gifs/search?q=" + searchTopic + "&api_key=" + apiKey + "&limit=10";
 var giphy;
 
 
