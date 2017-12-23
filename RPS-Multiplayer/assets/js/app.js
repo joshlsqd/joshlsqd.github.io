@@ -46,7 +46,7 @@ $('.ui.basic.modal').modal({
             database.ref('calvin').update({ isPicked: calvin.isPicked});
             $('#calvinButtons').addClass('pickedLeft');
             $('#hobbesButtons').empty();
-            currentUser = 'Calvin';
+            currentUser = 'calvin';
         }
     },
     onDeny : function() {
@@ -58,7 +58,7 @@ $('.ui.basic.modal').modal({
             database.ref('hobbes').update({ isPicked: hobbes.isPicked});
             $('#hobbesButtons').addClass('pickedRight');
             $('#calvinButtons').empty();
-            currentUser = 'Hobbes';
+            currentUser = 'hobbes';
         }
     }
 })
