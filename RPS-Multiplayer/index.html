@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock! Paper! Scissors!</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+</head>
+
+<body>
+
+<div class="header">	
+	<img class="topImage" src="https://futurism.com/wp-content/uploads/2014/05/rock-paper-scissors.jpg">
+	<h1>Rock, Paper and Scissors</h1>
+    <h2 id="wlt"></h2>
+</div>
+
+<div class="container">
+
+    <div class="gameRow">
+        <div class="player" id="calvinPlayer">
+            <div class="ui icon vertical buttons" id="calvinButtons">
+                <button data-image="assets/images/rock.png" data-id="1" class="ui button calvin">
+                    <i class="hand rock icon"></i>
+                </button>
+                <button data-image="assets/images/paper.png" data-id="2" class="ui button calvin">
+                    <i class="hand paper icon"></i>
+                </button>
+                <button data-image="assets/images/scissors.png" data-id="3" class="ui button calvin">
+                    <i class="hand scissors icon"></i>
+                </button>
+            </div>
+            <img class="ui small rounded image" src="assets/images/calvin.jpg">
+        </div>
+        <div class="game">
+            <img id="calvinPlayed" src="assets/images/question.png">
+            <h3>VS</h3>
+            <img id="hobbesPlayed" src="assets/images/question.png">
+        </div>
+        <div class="player" id="hobbesPlayer">
+            <img class="ui small rounded image" src="assets/images/hobbes.jpg">
+            <div class="ui icon vertical buttons" id="hobbesButtons">
+                <button data-image="assets/images/rock.png" data-id="1" class="ui button hobbes">
+                    <i class="hand rock icon"></i>
+                </button>
+                <button data-image="assets/images/paper.png" data-id="2" class="ui button hobbes">
+                    <i class="hand paper icon"></i>
+                </button>
+                <button data-image="assets/images/scissors.png" data-id="3" class="ui button hobbes">
+                    <i class="hand scissors icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="break">
+    </div>
+
+    <div class="statsRow">
+        <div class="ui relaxed list" id="calvinStats">
+            <div class="item">
+                <div class="content">
+                    <a class="header">Calvin Stats</a>
+                    <div class="description">Has won <a><b id="calvinWon"></b></a> games</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="description">Has lost <a><b id="calvinLost"></b></a> games</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="description">Has a win% of <a><b id="calvinWinPct"></b></a>%</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat">
+            <table class="ui very basic collapsing celled table">
+                <thead>
+                <tr><th colspan="2">
+                    RPS Chat
+                </th>
+                </tr></thead>
+
+                <tbody id="chatTable">
+                </tbody>
+            </table>
+            <div class="item">
+                <div class="ui input">
+                    <input id="chat" type="text" placeholder="chat...">
+                </div>
+            </div>
+        </div>
+
+        <div class="ui relaxed list" id="hobbesStats">
+            <div class="item">
+                <div class="content">
+                    <a class="header">Hobbes Stats</a>
+                    <div class="description">Has won <a><b id="hobbesWon"></b></a> games</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="description">Has lost <a><b id="hobbesLost"></b></a> games</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="description">Has a win% of <a><b id="hobbesWinPct"></b></a>%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="ui basic modal">
+    <div class="ui icon header">
+        <i class="add user icon"></i>
+        Pick Character
+    </div>
+    <div class="content">
+        <p>Are you Calvin or Hobbes?</p>
+    </div>
+    <div class="actions">
+        <div class="ui green approve inverted button" id="choseCalvin">
+            <img src="assets/images/calvin.jpg" class="ui small rounded image">
+        </div>
+        <div class="ui green deny inverted button" id="choseHobbes">
+            <img src="assets/images/hobbes.jpg" class="ui small rounded image">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

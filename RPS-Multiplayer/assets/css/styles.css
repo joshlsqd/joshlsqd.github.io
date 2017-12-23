@@ -1,0 +1,102 @@
+body {
+}
+
+.header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.topImage {
+    margin: 0 auto;
+    height: 200px;
+    width: 550px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameRow {
+    display: flex;
+    flex-direction: row;
+    /*max-height: 150px;*/
+    /*min-height: 100px;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2% 5%;
+
+}
+.player {
+    display: flex;
+    flex-direction: row;
+    max-height: 150px;
+    min-height: 100px;
+    min-width: 100px;
+    max-width: 150px;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.game img {
+    height: 60%;
+    width: 20%;
+    margin: 5% 5%;
+}
+
+.break {
+    height: 10px;
+    width: 100%;
+    /*border-bottom: yellow 2px solid;*/
+}
+
+.statsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2% 5%;
+}
+
+.pickedLeft {
+    border-left: orange 5px solid;
+}
+
+.pickedRight {
+    border-right: orange 5px solid;
+}
+
+#chat {
+    /*max-height: 200px;*/
+    /*min-height: 150px;*/
+    min-width: 300px;
+    max-width: 400px;
+    margin-bottom: 5px;
+
+}
+
+#hobbesStats {
+    margin: 0;
+    max-height: 150px;
+    min-height: 100px;
+    max-width: 200px;
+    min-width: 150px;
+
+}
+
+#calvinStats {
+    max-height: 150px;
+    min-height: 100px;
+    max-width: 200px;
+    min-width: 150px;
+
+}
+
+
+
