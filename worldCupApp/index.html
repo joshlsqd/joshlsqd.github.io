@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>World Cup 2018</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script src="https://use.fontawesome.com/0c445645e8.js"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/locale/af.js"></script>
+	</head>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper red darken-4">
+			
+			
+			<a href="#" class="brandLogo"><img src="https://storify.com/services/proxy/2/s-7WkrFMGILqux_QfsnyUg/http/pbs.twimg.com/media/B1G1qS_IUAEJa5O.jpg"></a>
+			
+			
+			<div class="header">World Cup News!</div>
+			
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<a href="http://resources.fifa.com/mm/document/tournament/competition/02/66/71/62/2018fwc_matchschedule_20122017_en_neutral.pdf" class="waves-effect waves-light btn"><i class="material-icons right ">list</i>Official Schedule</a>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="container">
+	<div class="row">
+		<div class="col s3">
+			<!-- Grey navigation panel -->
+			<div class="jumbotron" >
+				<div id="button-team">
+				</div>
+			</div>
+		</div>
+		<div class="col s9">
+			<table class="countdownContainer">
+				<tr class="info">
+					<td class="Countdown-header" colspan="4">World Cup Countdown</td>
+				</tr>
+				<tr class="info">
+					<td class="days" id="days"></td>
+					<td class="hours" id="hours"></td>
+					<td class="minutes" id="minutes"></td>
+					<td class="seconds" id="seconds"></td>
+				</tr>
+				<tr>
+					<td class="days">Days</td>
+					<td class="hours">Hours</td>
+					<td class="minutes">Minutes</td>
+					<td class="seconds">Seconds</td>
+				</tr>
+			</table>
+			<!-- <div class="container "> -->
+			
+			<ul class="collapsible collection content" data-collapsible="accordion" id="fixtures">
+			</ul>
+			<!-- </div> -->
+			
+			<div id="video-team"></div>
+			
+			<div id="news-team"></div>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
