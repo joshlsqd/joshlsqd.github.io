@@ -12,7 +12,7 @@ function displayFixtures() {
     // Creates AJAX call for each fixture
     $.ajax({
         headers: { 'X-Auth-Token': '532b79593e0642408603e3d7e89b525a' },
-        url: 'http://api.football-data.org//v1/competitions/467/fixtures',
+        url: 'https://api.football-data.org//v1/competitions/467/fixtures',
         dataType: 'json',
         type: 'GET',
     }).done(function(response) {
@@ -105,7 +105,7 @@ function getVideoId(){
 
         var results = videoNews.items;
         var videoId = results[0].id.videoId;
-        var videoUrl = "http://www.youtube.com/embed/"+videoId;
+        var videoUrl = "https://www.youtube.com/embed/"+videoId;
         var videoDiv = "<iframe width='620' height='400'src='"+videoUrl+"'frameborder='0' allowfullscreen></iframe>"
         $("#video-team").html(videoDiv);
 
